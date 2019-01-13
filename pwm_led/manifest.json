@@ -1,0 +1,13 @@
+{
+    "include": [
+        "$(MODDABLE)/examples/manifest_base.json"
+    ],
+    
+    "modules": {
+        "*": [
+            "./main",
+            "$(MODULES)/pins/pwm/esp32/*"
+        ],
+        "pins/pwm": "$(MODULES)/pins/pwm/pwm"
+    }
+}
